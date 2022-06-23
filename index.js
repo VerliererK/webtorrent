@@ -77,6 +77,8 @@ class WebTorrent extends EventEmitter {
       'new webtorrent (peerId %s, nodeId %s, port %s)',
       this.peerId, this.nodeId, this.torrentPort
     )
+    
+    console.log('webtorrent v0.108.6')
 
     if (this.tracker) {
       if (typeof this.tracker !== 'object') this.tracker = {}
